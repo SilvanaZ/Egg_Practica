@@ -1,0 +1,18 @@
+.container{
+    /* display: flex; */
+    border: 2px solid darkkhaki;
+    padding: 10px;
+}
+
+.container-1{
+border: darkkhaki;
+background-color: coral;
+}
+
+.container-2{
+background-color: cornflowerblue;
+}
+
+.container-3{
+background-color: darkseagreen;
+}

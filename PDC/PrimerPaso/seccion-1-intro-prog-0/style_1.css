@@ -1,0 +1,26 @@
+.externo{
+    background-color: red;
+    margin: 30px
+
+padding: 20px
+
+width: 400px (ancho)
+
+height: 200px (alto)
+}
+
+.externo #medio{
+    background-color:green ;
+margin: 30px
+padding: 20px
+width: 400px (ancho)
+height: 200px (alto)
+}
+
+.externo #medio #interno{
+    background-color: yellow;
+    margin: 30px
+padding: 20px
+width: 400px (ancho)
+height: 200px (alto)
+}

@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+body {
+        margin:0;
+        padding:0;
+        font-family: sans-serif;
+        background: linear-gradient(#141e30, #f5b7b1 );
+      }
+
+
+#form-container {
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: gray;
+    background-color:#f5b7b1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+  }
+
+
+  label {
+      display: block;
+    margin-bottom: 10px;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: gray;
+    pointer-events: none;
+    transition: .5s;
+    text-align: center;
+  }
+
+  .btn-enviar{
+      border-radius: 10%;
+      padding: 5px;
+      border: gray 2px solid;
+      color: lightgray;
+      background-color: gray;
+      cursor: pointer;
+      align-items: center;
+  }
+
+  input {
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+  .error-message {
+    color: red;
+    font-size: small;
+    height: 15px;
+  }
+
+  @media (max-width: 800px) {
+    body {
+        color: gray;
+        background: linear-gradient(#141e30, #f5b7b1 );
+    }
+    #form-container{
+        box-sizing: border-box;
+        box-shadow: 0 15px 25px rgba(0,0,0,.6);
+        border-radius: 10px;
+        color: gray;
+        background-color:#f5b7b1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 400px;
+        padding: 40px;
+        transform: translate(-50%, -50%);
+    }
+    .btn-enviar{
+        border-radius: 10%;
+        padding: 5px;
+        border: gray 2px solid;
+        color: lightgray;
+        background-color: gray;
+        cursor: pointer;
+    }
+  }
+
+  @media (max-width: 1600px) {
+    body {
+        color: gray;
+        background: linear-gradient(#141e30, #f5b7b1 );
+    }
+    #form-container{
+        box-sizing: border-box;
+        box-shadow: 0 15px 25px rgba(0,0,0,.6);
+        border-radius: 10px;
+        color: gray;
+        background-color:#f5b7b1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 400px;
+        padding: 40px;
+        transform: translate(-50%, -50%);
+    }
+    .btn-enviar{
+        border-radius: 10%;
+        padding: 5px;
+        border: gray 2px solid;
+        color: lightgray;
+        background-color: gray;
+        cursor: pointer;
+  }
+}

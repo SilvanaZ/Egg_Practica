@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style-ej-8.css"/>
+    <title>Ejercicio 3</title>
+</head>
+<body>
+  <div id="form-container">
+    <form id="my-form">
+      <div>
+        <label for="email">Correo electrónico:</label>
+        <input type="text" id="email" required>
+        <div id="email-error" class="error-message"></div>
+      </div>
+      <div>
+        <label for="age">Edad:</label>
+        <input type="number" id="age" required>
+        <div id="age-error" class="error-message"></div>
+      </div>
+      <button class="btn-enviar" type="submit">Enviar</button>
+    </form>
+  </div>
+
+  <script>
+    const emailInput = document.getElementById('email');
+    const emailError = document.getElementById('email-error');
+    const ageInput = document.getElementById('age');
+    const ageError = document.getElementById('age-error');
+
+    emailInput.addEventListener('input', validateEmail);
+    ageInput.addEventListener('input', validateAge);
+
+    function validateEmail() {
+      const email = emailInput.value;
+      const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+      if (emailPattern.test(email)) {
+        emailError.textContent = '';
+      } else {
+        emailError.textContent = 'Formato de correo inválido';
+      }
+    }
+
+    function validateAge() {
+      const age = parseInt(ageInput.value);
+
+      if (age > 0) {
+        ageError.textContent = '';
+      } else {
+        ageError.textContent = 'La edad debe ser mayor a 0';
+      }
+    }
+  </script>
+</body>
+</html>

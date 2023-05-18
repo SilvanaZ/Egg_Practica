@@ -1,0 +1,29 @@
+.exterior{
+    background-color: aquamarine;
+    color: blue;
+    margin: 30px;
+    padding: 20px;
+    width: 400px (ancho);
+    height: 200px (alto);
+    border: 3px solid black;
+}
+
+.medio{
+    background-color: blue;
+    color: darkblue;
+    margin: 30px;
+    padding: 20px;
+    width: 400px (ancho);
+    height: 200px (alto);
+    border: 3px solid black;
+}
+
+.interior{
+    background-color: darkblue;
+    color:aquamarine;
+    margin: 30px;
+    padding: 20px;
+    width: 400px (ancho);
+    height: 200px (alto);
+    border: 3px solid black;
+}
