@@ -1,6 +1,9 @@
-*{
-    background-color: green;
-    color: black;
+body{
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #800080;
+  background-image: linear-gradient(43deg, #800080 0%, #C850C0 46%, #fab3e5 100%);  
+    color: whitesmoke;
 }
 .container{
   max-width: 800px;
@@ -8,19 +11,89 @@
   padding: 20px;
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 10px;
-}
+.container-nav .navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #C850C0;
+  }
 
-.column {
-  flex: 1;
-  padding: 10px;
-}
+  footer {
+    margin-top: 40px;
+    background-color: #222;
+    padding: 40px 0;
+  }
+
+  .container-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-end;
+    background-color: #333;
+    padding: 10px;
+  }
+  
+  /* Estilos para la sección de los derechos reservados */
+  .footer-left p {
+    margin: 0;
+  }
+  
+  /* Estilos para la sección de las sucursales */
+  .footer-middle ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-middle ul li {
+    margin-bottom: 5px;
+  }
+
+  .footer-middle ul li:hover {
+    background-color: #C850C0;
+  }
+  
+  /* Estilos para la sección de las redes sociales */
+  .footer-right ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .footer-right li {
+    margin-left: 10px;
+  }
+  
+  .footer-right a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Estilos para los íconos de las redes sociales */
+  .footer-right a i {
+    font-size: 20px;
+    color: whitesmoke
+  }
 
 @media (max-width: 600px) {
-  .column {
-    flex: 100%;
-  }
+
 }
